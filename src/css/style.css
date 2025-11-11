@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-global{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;    
+    height: 100vh;
+  
+}
+
+.div-joystick{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    background-color: aliceblue;
+    width: 60%;
+    aspect-ratio: 9 / 3
+    
+}
+
+.borda-circular{
+    border-radius: 100%;
+    width: 32%;
+    aspect-ratio: 1 / 1;
+}
+
+.lado-A{
+    background-color: #C6C9CE;
+    
+}
+.lado-B{
+    background-color: #C6C9CE;
+}
+
+.base-central{
+    position: absolute;
+    top: 6px;
+    width: 55%;
+    aspect-ratio: 2/1;
+    background-color: #C6C9CE;
+    z-index: 1;
+}
