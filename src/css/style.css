@@ -15,34 +15,80 @@
 
 .div-joystick{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     position: relative;
-    background-color: aliceblue;
     width: 60%;
-    aspect-ratio: 9 / 3
-    
+    aspect-ratio: 9 / 3;
+    overflow: hidden;
 }
 
 .borda-circular{
     border-radius: 100%;
-    width: 32%;
+    width: 33%;
     aspect-ratio: 1 / 1;
-}
-
-.lado-A{
-    background-color: #C6C9CE;
-    
-}
-.lado-B{
-    background-color: #C6C9CE;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     background-color: #C6C9CE;
 }
 
 .base-central{
     position: absolute;
-    top: 6px;
-    width: 55%;
+    top: 0;
+    width: 60%;
     aspect-ratio: 2/1;
     background-color: #C6C9CE;
-    z-index: 1;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+ 
+}
+
+.container-botoes{
+    border-radius: 100%;
+    width: 87%;
+    aspect-ratio: 1/1;
+    background-color: #B8B9BE;
+    border: 1px solid rgba(0, 0, 0, 0.377);
+}
+
+.container-direcional{
+    border-radius: 100%;
+    width: 57%;
+    aspect-ratio: 1/1;
+    border: 1px solid #B8B9BD;
+}
+
+.container-start{
+    width: 35%;
+}
+
+.botoes-centrais{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15%;
+    width: 30%;
+    aspect-ratio: 3/1;
+    z-index: 2;
+}
+
+.botao-select,
+.botao-start{
+    border-radius: 15px;
+    width: 95%;
+    background-color:#454648;
+    aspect-ratio: 3/1;
+    transform: rotate(-30deg);
+    border: 5px solid #BFC0C4;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: #949496;
+    font-weight: bolder;
 }
